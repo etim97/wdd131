@@ -3,38 +3,52 @@
 <head>
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page </title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+<meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Wisdom Samuel Etim. This page includes dynamic features, examples of flex and grid layouts, and optimized local images.">
+<meta name="author"  content="Wisdom Samuel Etim">
+    <title>Dynamic Web Fundamentals-Wisdom Samuel Etim </title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 
 </head>
 <body>
   <header>
-    <div class="container"></div>
-    <div class="logo" > Ensignlog</div>
+    <h1>WDD131 Dynamic Web Fundamental-<span style=" color: yellow;">Wisdom Samuel Etim</h1>
+  </header>
             <nav>
-                <ul class=" nav-link">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact us</a></li>
-                    <li><a href="#">Our Service</a></li>
+                <ul>
+                    <li><a href="https://www.linkedin.com/" target="_blank">linkedIn</a></li>
+                    <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+                    <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Sriptures</a></li>
+                    <li><a href="#" target="_blank">Final Project</a></li>
                 </ul>
             </nav>
-      </header>
-      <section class="hero">
-             <h1>Ensign Logistics </h1>
-        <img src="image/hero.jpg" alt="hero image" width="200"/>
-        <div class="hero content">
-            <p> 
-                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló d</p>
-        </div>
+        <main>
+        <section class="card">
+         <h2>About me</h2>
+          <p>  I am BYU-Idaho student majoring in Software Development,  blending your education with hands-on experience as a programmer, web developer, and UI/UX designer. You’re also a data entry clerk, which highlights your attention to detail and discipline. With your creative flair in graphic design and technical expertise in software, you're building a versatile foundation to thrive in both creative and tech-driven spaces. Plus, your Leo energy probably adds a confident and determined vibe to everything you do</p>
+
+          <img src="images/chief executive officer.jpg" alt="CEO" width="200"/>
+          <h3>Wisdom Samuel</h3>
+          <p>Nigeria, officially the Federal Republic of Nigeria, is a country in West Africa. It is situated between the Sahel to the north and the Gulf of Guinea in the Atlantic Ocean to the south. It covers an area of 923,769 square kilometres (356,669 sq mi). With a population of more than 230 million, it is the most populous country in Africa, and the world's sixth-most populous country. Nigeria borders Niger in the north, Chad in the northeast, Cameroon in the east, and Benin in the west. Nigeria is a federal republic comprising 36 states and the Federal.</p>
+           <img src="images/flag.jpeg" alt="Nigeria flag" width="200"/>
+        </section>
+      <section class=" card">
+        <h2>Web Development Tools</h2>
+            <ul>
+             <li><a href="https://www.w3schools.com/">W3 School</a></li>
+             <li><a href="https://validator.w3.org/">Html validator</a></li>
+             <li><a href="https://css-tricks.com/">css-tricks</a></li>
+            </ul>
       </section>
+    </main>
+
        <footer>
-        <p> ©2025 🦀 <a href="index.html">Ensign Logistics</a> 🦀 Wisdom Samuel Etim 🦀</p>
-        <nav class="sociallinks">
-            <a href="https://facebook.com" target="_blank"><img src="image/face_book.png" alt="Facebook icon by Icons8.com"></a>
-            <a href="https://twitter.com" target="_blank"><img src="image/icons8-x-logo-100.png" alt="Twitter(X) icon by Icons8.com"></a>
-        </nav>
+        <p> 
+            &copy; <span id="currentyear"></span>
+            ©2025  <a href="index.html"></a> 🦀 Wisdom Samuel Etim 🦀 Nigeria
+        </p>
+        <p id="last-modified"></p>
        </footer>
+
 </body>
 </html>
