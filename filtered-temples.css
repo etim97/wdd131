@@ -6,6 +6,7 @@
 body{
   font-family: 'Arial', sans-serif;
     line-height: 1.6;;
+    height: 100vh;
 }
 header{
   background-color: rgba(3, 31, 123, 0.852);
@@ -133,7 +134,7 @@ main {
   footer {
     margin-top: 20px;
     padding: 10px;
-    background: #333;
+    background: rgba(3, 31, 123, 0.852);
     color: white;
     font-size: 14px;
   }

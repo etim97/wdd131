@@ -50,8 +50,24 @@ h1{
 img{
     object-fit: cover;
     border-radius: 4px;
+    width: 100%;
+    height: auto;
+    
 } 
 
+ .temple-card {
+        background-color: rgb(234, 229, 229);
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 1em;
+        text-align: center;
+        overflow: hidden;
+    
+}
+.temple-info{
+    margin-bottom: 10px;
+    text-align: justify;
+}
 
 main {
     flex: 3;
@@ -59,7 +75,7 @@ main {
     margin: 1rem auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 0.5rem;
+    gap: 1rem;
   }
 footer{
  background-color:rgba(3, 31, 123, 0.852); 

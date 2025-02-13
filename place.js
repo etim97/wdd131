@@ -1,9 +1,8 @@
-document.addEventListener("DOMContentLoaded", function () {
-    // Set current year in the footer
-    document.getElementById("current-year").textContent = new Date().getFullYear();
+// Set current year in footer
+document.getElementById('currentyear').textContent = new Date().getFullYear();
 
-    // Set last modified date in the footer
-    document.getElementById("last-modified").textContent = document.lastModified;
+// Set last modified date
+document.getElementById('last-modified').textContent = `Last modified: ${document.lastModified}`;
 
     // Weather data (example)
     const temperature = 10; // Example: 10°C
@@ -39,4 +38,4 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     weatherIconContainer.textContent = weatherIcon;
-});
+
