@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="WDD131 - Product Review Form">
+<meta name="author" content="Wisdom Samuel Etim">
+<link rel="stylesheet" href="review.css">
+<script src="review.js" defer></script>
+<title>Product Review</title>
+</head> 
+<body>
+    <header><h1>Product Review</h1></header>
+    <main>
+        <form method="get" action="ThankYou.html" class="prf">
+            
+            <label>Product Name:
+                <select name="product">
+                    <option value="">Choose a product...</option>
+                    <option value="drink">America Cola</option>
+                    <option value="chemical">Force Up</option>
+                    <option value="hair gel">Soul Mate</option>
+                </select>
+            </label>
+
+            <label>Overall Rating:</label>
+            <label><input type="radio" name="rating" value="1"> ★</label>
+            <label><input type="radio" name="rating" value="2"> ★★</label>
+            <label><input type="radio" name="rating" value="3"> ★★★</label>
+            <label><input type="radio" name="rating" value="4"> ★★★★</label>
+            <label><input type="radio" name="rating" value="5"> ★★★★★</label>
+
+            <label>Date of Installation:
+                <input type="date" name="date">
+            </label>
+
+            <fieldset>
+                <legend>Which features did you find useful in the product? <em>(Check all that apply)</em></legend>
+                <label><input type="checkbox" name="features" value="durability"> Durability</label>
+                <label><input type="checkbox" name="features" value="ease"> Ease of Use</label>
+                <label><input type="checkbox" name="features" value="performance"> Performance</label>
+                <label><input type="checkbox" name="features" value="design"> Design</label>
+            </fieldset>
+
+            <label>Written Review <span style="color:blue;" >(Optional)</span>:
+                <textarea name="review" rows="4" placeholder="Write your review here..."></textarea>
+            </label>
+
+            <label>Your Name <span style="color:blue;">(Optional)</span>:
+                <input type="text" name="name" placeholder="Enter your name">
+            </label>
+
+            <button type="submit">Post Review</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>
+            <span id="currentyear"></span> ©2025 
+            Wisdom Samuel Etim 🦀 Nigeria
+        </p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+</html>
