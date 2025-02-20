@@ -4,7 +4,6 @@ document.getElementById('currentyear').textContent = new Date().getFullYear();
 // Set last modified date
 document.getElementById('last-modified').textContent = `Last modified: ${document.lastModified}`;
 
-// Wait for the DOM to load
 document.addEventListener("DOMContentLoaded", function () {
     // Selecting elements
     const form = document.querySelector("#data-form");
@@ -15,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const clearBtn = document.querySelector("#clearBtn");
     const menuToggle = document.querySelector("#menu-toggle");
     const navLinks = document.querySelector(".nav-links");
-    
+
     // Load saved data from localStorage
     function loadMessages() {
         const savedMessages = JSON.parse(localStorage.getItem("messages")) || [];
@@ -43,11 +42,13 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("Please enter both name and message.");
             return;
         }
+
         document.getElementById("myForm").addEventListener("submit", function(event) {
             event.preventDefault();
             let name = document.getElementById("name").value;
             document.getElementById("response").innerText = `Thank you, ${name}! Your form has been submitted.`;
         });
+
         // Save to localStorage
         const messages = JSON.parse(localStorage.getItem("messages")) || [];
         const newMessage = { name, message };
@@ -99,4 +100,35 @@ document.addEventListener("DOMContentLoaded", function () {
             navLinks.style.display = "none";
         }
     });
+
+    // Tracking Functionality
+    const trackingForm = document.querySelector(".tracking-section form");
+    const trackingInput = document.getElementById("tracking-number");
+
+    if (trackingForm && trackingInput) {
+        trackingForm.addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent actual form submission
+
+            const trackingNumber = trackingInput.value.trim();
+
+            if (trackingNumber === "") {
+                alert("Please enter a tracking number.");
+                return;
+            }
+
+            // Simulate a tracking result
+            const resultMessage = document.createElement("p");
+            resultMessage.classList.add("tracking-result");
+            resultMessage.textContent = `Tracking Number: ${trackingNumber} - Status: In Transit 🚚`;
+
+            // Remove previous result if any
+            const previousResult = document.querySelector(".tracking-result");
+            if (previousResult) {
+                previousResult.remove();
+            }
+
+            // Append the result to the tracking section
+            trackingForm.after(resultMessage);
+        });
+    }
 });
