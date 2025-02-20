@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="decription" content="WDD-131 by Wisdom Samuel home page for ensignlogistics and shipping company">
+    <meta name="author" content="Wisdom Samuel Etim">
+    <title>Ensign Logistics - Contact</title>
+    <link href="https://www.google.com/search?q=font-family%3A+roboto%2C+open+san+sans-serif%3B&oq=&gs_lcrp=EgZjaHJvbWUqCQgAECMYJxjqAjIJCAAQIxgnGOoCMgkIARAjGCcY6gIyCQgCECMYJxjqAjIJCAMQIxgnGOoCMgkIBBAjGCcY6gIyCQgFECMYJxjqAjIJCAYQIxgnGOoCMgkIBxAjGCcY6gLSAQk1NDUxajBqMTWoAgiwAgE&sourceid=chrome&ie=UTF-8">
+    <link rel="stylesheet" href="ensign.css">
+</head>
+<body>
+    
+        <header>
+           <img src="images/Logo.jpg" alt="site logo" width="200">
+            <nav>
+                <div class="logo">Ensign Logistics</div>
+                <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <main>
+            <h4>CONTACT CUSTOMER SUPPORT</h4>
+            <p>We are waiting to help you - so do not hesitate to reach out!</p>
+            <form>
+                <button type="button">Contact Support</button>
+            </form>
+    
+            <section class="company-info">
+                <h2>Headquarters</h2>
+                <h4>Lagos, Nigeria</h4>
+                <p>5 Agekunle Close, Isheri, Ikeja</p>
+                <p>Phone: +234 9122589222</p>
+                <p>Email: info@ensignlogistics.com</p>
+                <nav class="sociallinks">
+                    <a href="https://facebook.com" target="_blank"><img src="images/face_book.png" alt="Facebook" width="30"></a>
+                    <a href="https://twitter.com" target="_blank"><img src="images/twitter_logo.png" alt="Twitter(X)" width="30"></a>
+                </nav>
+    
+                <iframe src="https://www.google.com/maps/embed?..." width="100%" height="450" style="border:0;"loading="lazy" width="600" height="400"></iframe> allowfullscreen></iframe>
+            </section>
+        </main>
+
+        <section>
+            <h2>Logistics Service Request</h2>
+        <form method="get" action="ThankYou.html" >
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="service">Service Type:</label>
+        <select id="service" name="service" required>
+            <option value="shipping">Shipping</option>
+            <option value="freight">Freight</option>
+            <option value="warehousing">Warehousing</option>
+        </select><br><br>
+
+        <label for="details">Additional Details:</label><br>
+        <textarea id="details" name="details" rows="4"></textarea><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            <span id="currentyear"></span> &copy; 2025 Ensign Logistics. All rights reserved.
+        </p>
+        <p id="last-modified"></p>
+        <div class="sociallinks">
+            <a href="https://facebook.com" target="_blank"><img src="images/face_book.png" alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/icons8-x-logo-100.png" alt="Twitter"></a>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
